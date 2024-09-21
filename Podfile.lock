@@ -1,0 +1,16 @@
+PODS:
+  - MyBaseExtension (0.0.1)
+
+DEPENDENCIES:
+  - MyBaseExtension (from `/Users/guanjiayin/MyBaseExtension`)
+
+EXTERNAL SOURCES:
+  MyBaseExtension:
+    :path: "/Users/guanjiayin/MyBaseExtension"
+
+SPEC CHECKSUMS:
+  MyBaseExtension: b7909cc5dfb6760f7e04c1d7f39b3a204c22a2d7
+
+PODFILE CHECKSUM: b4a169fddb4e794112ee168e32cb4cc684f13a74
+
+COCOAPODS: 1.15.2
