@@ -23,7 +23,18 @@
 		EB6B57252C9EC4CF008E6F92 /* Effect.md in Resources */ = {isa = PBXBuildFile; fileRef = EB6B57242C9EC4CF008E6F92 /* Effect.md */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		395E35952CA04FA700233391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 395E35912CA04FA600233391 /* ModuleDebug.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 395E35792CA04FA500233391;
+			remoteInfo = ModuleDebug;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		395E35912CA04FA600233391 /* ModuleDebug.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ModuleDebug.xcodeproj; path = ModuleDebug/ModuleDebug.xcodeproj; sourceTree = "<group>"; };
 		3B27B6A2DD5DF0FE51A65EF0 /* Pods-MyControlView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyControlView.debug.xcconfig"; path = "Target Support Files/Pods-MyControlView/Pods-MyControlView.debug.xcconfig"; sourceTree = "<group>"; };
 		3CDA5B435FFED6F242F51019 /* Pods-MyControlView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyControlView.release.xcconfig"; path = "Target Support Files/Pods-MyControlView/Pods-MyControlView.release.xcconfig"; sourceTree = "<group>"; };
 		772E358C9A06D832CB8CA25E /* Pods_MyControlView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyControlView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +75,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		395E35922CA04FA600233391 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				395E35962CA04FA700233391 /* ModuleDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		870C72B02F54D88462E387A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +94,7 @@
 		EB6B56F42C9EC00C008E6F92 = {
 			isa = PBXGroup;
 			children = (
+				395E35912CA04FA600233391 /* ModuleDebug.xcodeproj */,
 				EB6B57002C9EC00C008E6F92 /* MyControlView */,
 				EB6B56FF2C9EC00C008E6F92 /* Products */,
 				010D56E67792F9135637BC61 /* Pods */,
@@ -209,12 +229,28 @@
 			mainGroup = EB6B56F42C9EC00C008E6F92;
 			productRefGroup = EB6B56FF2C9EC00C008E6F92 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 395E35922CA04FA600233391 /* Products */;
+					ProjectRef = 395E35912CA04FA600233391 /* ModuleDebug.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EB6B56FD2C9EC00C008E6F92 /* MyControlView */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		395E35962CA04FA700233391 /* ModuleDebug.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ModuleDebug.app;
+			remoteRef = 395E35952CA04FA700233391 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EB6B56FC2C9EC00C008E6F92 /* Resources */ = {
