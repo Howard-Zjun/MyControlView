@@ -2,15 +2,20 @@ PODS:
   - MyBaseExtension (0.0.1)
 
 DEPENDENCIES:
-  - MyBaseExtension (from `/Users/guanjiayin/MyBaseExtension`)
+  - MyBaseExtension (from `https://github.com/Howard-Zjun/MyBaseExtension.git`)
 
 EXTERNAL SOURCES:
   MyBaseExtension:
-    :path: "/Users/guanjiayin/MyBaseExtension"
+    :git: https://github.com/Howard-Zjun/MyBaseExtension.git
+
+CHECKOUT OPTIONS:
+  MyBaseExtension:
+    :commit: 78fd965659e759f6093b7f9289b4ec1f6ed12633
+    :git: https://github.com/Howard-Zjun/MyBaseExtension.git
 
 SPEC CHECKSUMS:
   MyBaseExtension: b7909cc5dfb6760f7e04c1d7f39b3a204c22a2d7
 
-PODFILE CHECKSUM: b4a169fddb4e794112ee168e32cb4cc684f13a74
+PODFILE CHECKSUM: e4e4a232df1dcd4acd82aa39cb74a95e1e5d055e
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.14.3

@@ -6,5 +6,6 @@ target 'MyControlView' do
 
   use_frameworks!
 
-  pod 'MyBaseExtension', :path => '/Users/guanjiayin/MyBaseExtension'
+#  pod 'MyBaseExtension', :path => '/Users/Howard-Zjun/MyBaseExtension'
+  pod 'MyBaseExtension', :git => 'https://github.com/Howard-Zjun/MyBaseExtension.git'
 end

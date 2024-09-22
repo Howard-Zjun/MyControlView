@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07315690B03D838A392CCD026E7CD51E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D343742680EF13B4EEDCE18273E864 /* UIColor+Extension.swift */; };
+		07315690B03D838A392CCD026E7CD51E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E779FC95858CBFBA0C5E991163DF6 /* UIColor+Extension.swift */; };
 		238AC4CBAF6BE4457004F81480DB317F /* Pods-MyControlView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE974321FC143D5A1F3D15B55626723C /* Pods-MyControlView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2AD0896200AB1B769965D4EA5B4A88EA /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BC990CCE0DFAC475CF644285DA2803 /* UIImage+Extension.swift */; };
-		336467970551F5913EE7794F7E440949 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E7D57448A6B68AF44F9E77F3EA55FE /* URL+Extension.swift */; };
-		45001F3D1FEF134AA0D03DFE925EC3A8 /* DFPickerPhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE199648453926E3F8F5FCB14B0ED8 /* DFPickerPhotoManager.swift */; };
-		4A13E2808BEBF6FD0F1A86083019DD61 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6B97959F98D1830522B10C8BA5A6D6 /* NSObject+Extension.swift */; };
-		5A21CA12EB3604BCD4E2D511E571EC73 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4757DDEBA9DEA3D6752A97282E707E /* Tool.swift */; };
-		5AA75A07A4971D9A89E1C38BE93C59B7 /* MyBaseExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2A1990495ED7CDB2E0CC7502AB256C /* MyBaseExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60F0A25F5EBFA4C171366265F1E2ED17 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85D1CE776430EA29AC78CC1C18E9B8 /* PermissionManager.swift */; };
-		62D1B887B744E67A889540306D9AE59D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7454F4871B3E10D3EDE8B0AFC1DF9C8F /* UIView+Extension.swift */; };
-		6FCF0AB179C2240A21C6CC273083EF45 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CF815BE49786C181FCCB48E9BFECAB61 /* UIImage+Extension.m */; };
-		74A51FE7EF073E0E0C008476D4075D21 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38C5C4624B98A435F1F38FC56E31AE /* UITableView+Extension.swift */; };
+		2AD0896200AB1B769965D4EA5B4A88EA /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E52F47A1CD1C30C623C634D7FA9EEA /* UIImage+Extension.swift */; };
+		336467970551F5913EE7794F7E440949 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CD0CC3A10AA7567542801A25785061 /* URL+Extension.swift */; };
+		45001F3D1FEF134AA0D03DFE925EC3A8 /* DFPickerPhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65AD253DC50301FF51DA5B4C63BD28 /* DFPickerPhotoManager.swift */; };
+		4A13E2808BEBF6FD0F1A86083019DD61 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE44082F4716242CDEF7DFB4DEA92860 /* NSObject+Extension.swift */; };
+		5A21CA12EB3604BCD4E2D511E571EC73 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC8106C13B64288C850839B7B45F162 /* Tool.swift */; };
+		5AA75A07A4971D9A89E1C38BE93C59B7 /* MyBaseExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFB31BD314049BE608F3E68CC14C370 /* MyBaseExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60F0A25F5EBFA4C171366265F1E2ED17 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F877B442AB3FEEE070E143BA92A4FDE /* PermissionManager.swift */; };
+		62D1B887B744E67A889540306D9AE59D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16198AB070EB298CA070914F9605E3C8 /* UIView+Extension.swift */; };
+		6FCF0AB179C2240A21C6CC273083EF45 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 863E7E54437269131A73F2AD76ADBEB3 /* UIImage+Extension.m */; };
+		74A51FE7EF073E0E0C008476D4075D21 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09462BF3D353A643A53F9495D4442422 /* UITableView+Extension.swift */; };
 		9F1A729F349BD3E043FCB25104B15B0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		AED9BCBB0E6904AEE5605CD7B54397C2 /* UIImage+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C5D39D5834E53D83A462CB0C6B461C /* UIImage+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDE4C631847833D541BC562DE720F7A3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2005FD33F6F17D67B4EADDD5149A9A /* String+Extension.swift */; };
-		D4C6BCF5FD55BD5ED5E00553D40DBC15 /* MyBaseExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7E8ECF4BD169A364553D569746352B /* MyBaseExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AED9BCBB0E6904AEE5605CD7B54397C2 /* UIImage+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = DA403FF2119499B5898557A7BA3DDACC /* UIImage+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDE4C631847833D541BC562DE720F7A3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050AAEB1AB5BBC2805323047886C902C /* String+Extension.swift */; };
+		D4C6BCF5FD55BD5ED5E00553D40DBC15 /* MyBaseExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 908D25E75AAFED993ED3B8C0C096F937 /* MyBaseExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF5F59F356B0EAB385455FC0434E1830 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E3ECEF87FB34363680E628452526A96E /* Pods-MyControlView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 425CF73BC794B78E8F22ABF203D8E5D5 /* Pods-MyControlView-dummy.m */; };
-		F6DA1251F0DB31BD6373BD50344EA5CF /* MyBaseExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D1A76B6DC9E76E17E9DBDE19DB991D /* MyBaseExtension-dummy.m */; };
+		F6DA1251F0DB31BD6373BD50344EA5CF /* MyBaseExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1577261DC6A73829B0F3605ADAE9DDB5 /* MyBaseExtension-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6D98DD8FE513EBFE8ED857B5234FEF83 /* PBXContainerItemProxy */ = {
+		33D7911D4CB3076C9F2D8BD0EA225E41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -39,40 +39,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0890C1B779B6C808D5135DDDCEAC0BB7 /* MyBaseExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MyBaseExtension-prefix.pch"; sourceTree = "<group>"; };
-		0B635024992CF2BCB4B1973385703032 /* MyBaseExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MyBaseExtension-Info.plist"; sourceTree = "<group>"; };
-		0F38C5C4624B98A435F1F38FC56E31AE /* UITableView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Extension.swift"; path = "MyBaseExtension/UITableView+Extension.swift"; sourceTree = "<group>"; };
-		15F90557138588AA73CF46D7BFBFE76C /* MyBaseExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MyBaseExtension.modulemap; sourceTree = "<group>"; };
+		050AAEB1AB5BBC2805323047886C902C /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "MyBaseExtension/String+Extension.swift"; sourceTree = "<group>"; };
+		09462BF3D353A643A53F9495D4442422 /* UITableView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Extension.swift"; path = "MyBaseExtension/UITableView+Extension.swift"; sourceTree = "<group>"; };
+		13E52F47A1CD1C30C623C634D7FA9EEA /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "MyBaseExtension/UIImage+Extension.swift"; sourceTree = "<group>"; };
+		1577261DC6A73829B0F3605ADAE9DDB5 /* MyBaseExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MyBaseExtension-dummy.m"; sourceTree = "<group>"; };
+		16198AB070EB298CA070914F9605E3C8 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "MyBaseExtension/UIView+Extension.swift"; sourceTree = "<group>"; };
 		18731AF1E8229EEA3D8CDF4184446AC2 /* MyBaseExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MyBaseExtension; path = MyBaseExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		188A2224D0EBDE223C187996A1E96054 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		2C7E8ECF4BD169A364553D569746352B /* MyBaseExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MyBaseExtension-umbrella.h"; sourceTree = "<group>"; };
-		2E2A1990495ED7CDB2E0CC7502AB256C /* MyBaseExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MyBaseExtension.h; path = MyBaseExtension/MyBaseExtension.h; sourceTree = "<group>"; };
+		1876685D365E5FF5699CFAA19C932E4A /* MyBaseExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MyBaseExtension-prefix.pch"; sourceTree = "<group>"; };
+		1ADFF923087D478209917AD74D548DF5 /* MyBaseExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MyBaseExtension.debug.xcconfig; sourceTree = "<group>"; };
+		1DFB31BD314049BE608F3E68CC14C370 /* MyBaseExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MyBaseExtension.h; path = MyBaseExtension/MyBaseExtension.h; sourceTree = "<group>"; };
 		3205696EC8FDFFB4F7AC4B0288B7413B /* Pods-MyControlView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyControlView-acknowledgements.plist"; sourceTree = "<group>"; };
-		41FE199648453926E3F8F5FCB14B0ED8 /* DFPickerPhotoManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFPickerPhotoManager.swift; path = MyBaseExtension/DFPickerPhotoManager.swift; sourceTree = "<group>"; };
+		34CD0CC3A10AA7567542801A25785061 /* URL+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+Extension.swift"; path = "MyBaseExtension/URL+Extension.swift"; sourceTree = "<group>"; };
+		38CE71AA85742A3A4E674F5F554582A1 /* MyBaseExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MyBaseExtension.modulemap; sourceTree = "<group>"; };
+		3F877B442AB3FEEE070E143BA92A4FDE /* PermissionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionManager.swift; path = MyBaseExtension/PermissionManager.swift; sourceTree = "<group>"; };
 		425CF73BC794B78E8F22ABF203D8E5D5 /* Pods-MyControlView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyControlView-dummy.m"; sourceTree = "<group>"; };
-		49EBBE77C656F274F4F2127330426CAA /* MyBaseExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MyBaseExtension.release.xcconfig; sourceTree = "<group>"; };
-		4F4757DDEBA9DEA3D6752A97282E707E /* Tool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tool.swift; path = MyBaseExtension/Tool.swift; sourceTree = "<group>"; };
+		5C65AD253DC50301FF51DA5B4C63BD28 /* DFPickerPhotoManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFPickerPhotoManager.swift; path = MyBaseExtension/DFPickerPhotoManager.swift; sourceTree = "<group>"; };
 		61D8F88AB522560CBA192488455FACFE /* Pods-MyControlView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyControlView.modulemap"; sourceTree = "<group>"; };
-		66E7D57448A6B68AF44F9E77F3EA55FE /* URL+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+Extension.swift"; path = "MyBaseExtension/URL+Extension.swift"; sourceTree = "<group>"; };
 		6803B403204AA9E90243CEE28B33C6D2 /* Pods-MyControlView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyControlView.release.xcconfig"; sourceTree = "<group>"; };
-		6F6B97959F98D1830522B10C8BA5A6D6 /* NSObject+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Extension.swift"; path = "MyBaseExtension/NSObject+Extension.swift"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7454F4871B3E10D3EDE8B0AFC1DF9C8F /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "MyBaseExtension/UIView+Extension.swift"; sourceTree = "<group>"; };
-		76C5D39D5834E53D83A462CB0C6B461C /* UIImage+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extension.h"; path = "MyBaseExtension/UIImage+Extension.h"; sourceTree = "<group>"; };
 		7F274A6C7F046CB643B1D4D0FE80552D /* Pods-MyControlView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyControlView-Info.plist"; sourceTree = "<group>"; };
-		82D343742680EF13B4EEDCE18273E864 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "MyBaseExtension/UIColor+Extension.swift"; sourceTree = "<group>"; };
-		9CBF0046C64BEDCEF95D73604FC64281 /* MyBaseExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MyBaseExtension.debug.xcconfig; sourceTree = "<group>"; };
+		863E7E54437269131A73F2AD76ADBEB3 /* UIImage+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Extension.m"; path = "MyBaseExtension/UIImage+Extension.m"; sourceTree = "<group>"; };
+		908D25E75AAFED993ED3B8C0C096F937 /* MyBaseExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MyBaseExtension-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F2005FD33F6F17D67B4EADDD5149A9A /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "MyBaseExtension/String+Extension.swift"; sourceTree = "<group>"; };
-		A994624193D49DCB0CAA585A3B7B9BA9 /* MyBaseExtension.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MyBaseExtension.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE44082F4716242CDEF7DFB4DEA92860 /* NSObject+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Extension.swift"; path = "MyBaseExtension/NSObject+Extension.swift"; sourceTree = "<group>"; };
 		BC63B453CA76735C4F94B2B60E52A5AF /* Pods-MyControlView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MyControlView"; path = Pods_MyControlView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5BFE6254440E7AF17C275EA936AB42E /* Pods-MyControlView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyControlView.debug.xcconfig"; sourceTree = "<group>"; };
 		CA006372E82738FC12310E1EC6CFC2E5 /* Pods-MyControlView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyControlView-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CF815BE49786C181FCCB48E9BFECAB61 /* UIImage+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Extension.m"; path = "MyBaseExtension/UIImage+Extension.m"; sourceTree = "<group>"; };
-		E7D1A76B6DC9E76E17E9DBDE19DB991D /* MyBaseExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MyBaseExtension-dummy.m"; sourceTree = "<group>"; };
+		DA403FF2119499B5898557A7BA3DDACC /* UIImage+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extension.h"; path = "MyBaseExtension/UIImage+Extension.h"; sourceTree = "<group>"; };
+		DCC8106C13B64288C850839B7B45F162 /* Tool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tool.swift; path = MyBaseExtension/Tool.swift; sourceTree = "<group>"; };
+		DFD8F86E181FE4B5F28B3796DBB0878F /* MyBaseExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MyBaseExtension.release.xcconfig; sourceTree = "<group>"; };
+		EBBFBA1D7889B684783CA74D19FA6279 /* MyBaseExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MyBaseExtension-Info.plist"; sourceTree = "<group>"; };
+		EC7E779FC95858CBFBA0C5E991163DF6 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "MyBaseExtension/UIColor+Extension.swift"; sourceTree = "<group>"; };
 		EE974321FC143D5A1F3D15B55626723C /* Pods-MyControlView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyControlView-umbrella.h"; sourceTree = "<group>"; };
-		F2BC990CCE0DFAC475CF644285DA2803 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "MyBaseExtension/UIImage+Extension.swift"; sourceTree = "<group>"; };
-		FA85D1CE776430EA29AC78CC1C18E9B8 /* PermissionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionManager.swift; path = MyBaseExtension/PermissionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,35 +102,42 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1B8BB988F220638EF11550DED2F56AD9 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				82300F16A8BC066228BDDF2D374B0397 /* MyBaseExtension */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		1F43DDB5210F9E203E4302BE90329A30 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				15F90557138588AA73CF46D7BFBFE76C /* MyBaseExtension.modulemap */,
-				E7D1A76B6DC9E76E17E9DBDE19DB991D /* MyBaseExtension-dummy.m */,
-				0B635024992CF2BCB4B1973385703032 /* MyBaseExtension-Info.plist */,
-				0890C1B779B6C808D5135DDDCEAC0BB7 /* MyBaseExtension-prefix.pch */,
-				2C7E8ECF4BD169A364553D569746352B /* MyBaseExtension-umbrella.h */,
-				9CBF0046C64BEDCEF95D73604FC64281 /* MyBaseExtension.debug.xcconfig */,
-				49EBBE77C656F274F4F2127330426CAA /* MyBaseExtension.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../MyControlView/Pods/Target Support Files/MyBaseExtension";
-			sourceTree = "<group>";
-		};
 		3D2021D9F1CA30AA921AC0E66D48739C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				649D5C1EAE0706D4B6C516F3D8F800E7 /* Pods-MyControlView */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3FF9D53066244C49AB76614476B4A5CB /* MyBaseExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5C65AD253DC50301FF51DA5B4C63BD28 /* DFPickerPhotoManager.swift */,
+				1DFB31BD314049BE608F3E68CC14C370 /* MyBaseExtension.h */,
+				AE44082F4716242CDEF7DFB4DEA92860 /* NSObject+Extension.swift */,
+				3F877B442AB3FEEE070E143BA92A4FDE /* PermissionManager.swift */,
+				050AAEB1AB5BBC2805323047886C902C /* String+Extension.swift */,
+				DCC8106C13B64288C850839B7B45F162 /* Tool.swift */,
+				EC7E779FC95858CBFBA0C5E991163DF6 /* UIColor+Extension.swift */,
+				DA403FF2119499B5898557A7BA3DDACC /* UIImage+Extension.h */,
+				863E7E54437269131A73F2AD76ADBEB3 /* UIImage+Extension.m */,
+				13E52F47A1CD1C30C623C634D7FA9EEA /* UIImage+Extension.swift */,
+				09462BF3D353A643A53F9495D4442422 /* UITableView+Extension.swift */,
+				16198AB070EB298CA070914F9605E3C8 /* UIView+Extension.swift */,
+				34CD0CC3A10AA7567542801A25785061 /* URL+Extension.swift */,
+				8A586E6F218502FD04F4BD4C4009F2AF /* Support Files */,
+			);
+			name = MyBaseExtension;
+			path = MyBaseExtension;
+			sourceTree = "<group>";
+		};
+		464B3BA0FB34D0E031CC1689DCE12C36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FF9D53066244C49AB76614476B4A5CB /* MyBaseExtension */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -159,44 +164,27 @@
 			path = "Target Support Files/Pods-MyControlView";
 			sourceTree = "<group>";
 		};
-		7F48B1CB19F16589A9C159E4356E952A /* Pod */ = {
+		8A586E6F218502FD04F4BD4C4009F2AF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				188A2224D0EBDE223C187996A1E96054 /* LICENSE */,
-				A994624193D49DCB0CAA585A3B7B9BA9 /* MyBaseExtension.podspec */,
+				38CE71AA85742A3A4E674F5F554582A1 /* MyBaseExtension.modulemap */,
+				1577261DC6A73829B0F3605ADAE9DDB5 /* MyBaseExtension-dummy.m */,
+				EBBFBA1D7889B684783CA74D19FA6279 /* MyBaseExtension-Info.plist */,
+				1876685D365E5FF5699CFAA19C932E4A /* MyBaseExtension-prefix.pch */,
+				908D25E75AAFED993ED3B8C0C096F937 /* MyBaseExtension-umbrella.h */,
+				1ADFF923087D478209917AD74D548DF5 /* MyBaseExtension.debug.xcconfig */,
+				DFD8F86E181FE4B5F28B3796DBB0878F /* MyBaseExtension.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "../Target Support Files/MyBaseExtension";
 			sourceTree = "<group>";
-		};
-		82300F16A8BC066228BDDF2D374B0397 /* MyBaseExtension */ = {
-			isa = PBXGroup;
-			children = (
-				41FE199648453926E3F8F5FCB14B0ED8 /* DFPickerPhotoManager.swift */,
-				2E2A1990495ED7CDB2E0CC7502AB256C /* MyBaseExtension.h */,
-				6F6B97959F98D1830522B10C8BA5A6D6 /* NSObject+Extension.swift */,
-				FA85D1CE776430EA29AC78CC1C18E9B8 /* PermissionManager.swift */,
-				9F2005FD33F6F17D67B4EADDD5149A9A /* String+Extension.swift */,
-				4F4757DDEBA9DEA3D6752A97282E707E /* Tool.swift */,
-				82D343742680EF13B4EEDCE18273E864 /* UIColor+Extension.swift */,
-				76C5D39D5834E53D83A462CB0C6B461C /* UIImage+Extension.h */,
-				CF815BE49786C181FCCB48E9BFECAB61 /* UIImage+Extension.m */,
-				F2BC990CCE0DFAC475CF644285DA2803 /* UIImage+Extension.swift */,
-				0F38C5C4624B98A435F1F38FC56E31AE /* UITableView+Extension.swift */,
-				7454F4871B3E10D3EDE8B0AFC1DF9C8F /* UIView+Extension.swift */,
-				66E7D57448A6B68AF44F9E77F3EA55FE /* URL+Extension.swift */,
-				7F48B1CB19F16589A9C159E4356E952A /* Pod */,
-				1F43DDB5210F9E203E4302BE90329A30 /* Support Files */,
-			);
-			name = MyBaseExtension;
-			path = /Users/guanjiayin/MyBaseExtension;
-			sourceTree = "<absolute>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				1B8BB988F220638EF11550DED2F56AD9 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				464B3BA0FB34D0E031CC1689DCE12C36 /* Pods */,
 				0484E7DF406BC593CC9671FA008A7C2B /* Products */,
 				3D2021D9F1CA30AA921AC0E66D48739C /* Targets Support Files */,
 			);
@@ -264,7 +252,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4F03CF3033E944F8FD7391E875CBD576 /* PBXTargetDependency */,
+				5013B65202859D6329AB6B219457BDAE /* PBXTargetDependency */,
 			);
 			name = "Pods-MyControlView";
 			productName = Pods_MyControlView;
@@ -289,7 +277,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
 			productRefGroup = 0484E7DF406BC593CC9671FA008A7C2B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -348,11 +335,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4F03CF3033E944F8FD7391E875CBD576 /* PBXTargetDependency */ = {
+		5013B65202859D6329AB6B219457BDAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MyBaseExtension;
 			target = 87A2F70BECF0B43B705EF24FE5D9E199 /* MyBaseExtension */;
-			targetProxy = 6D98DD8FE513EBFE8ED857B5234FEF83 /* PBXContainerItemProxy */;
+			targetProxy = 33D7911D4CB3076C9F2D8BD0EA225E41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -562,7 +549,7 @@
 		};
 		CFEC1FBA7F31C3623929368D10F852A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49EBBE77C656F274F4F2127330426CAA /* MyBaseExtension.release.xcconfig */;
+			baseConfigurationReference = DFD8F86E181FE4B5F28B3796DBB0878F /* MyBaseExtension.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -598,7 +585,7 @@
 		};
 		FAEEE5999F27F89EBE10B659C19E0AE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CBF0046C64BEDCEF95D73604FC64281 /* MyBaseExtension.debug.xcconfig */;
+			baseConfigurationReference = 1ADFF923087D478209917AD74D548DF5 /* MyBaseExtension.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
