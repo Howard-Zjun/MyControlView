@@ -8,7 +8,7 @@
 import UIKit
 import MyBaseExtension
 
-class CVSliderView: UIView {
+public class CVSliderView: UIView {
     
     // MARK: - view
     lazy var scaleView: UIView = {
@@ -43,7 +43,7 @@ class CVSliderView: UIView {
     }()
     
     // MARK: - life time
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         configUI()
     }
