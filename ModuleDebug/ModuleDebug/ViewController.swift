@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let slider = CVSliderView(frame: .zero)
+        let slider = CVSliderView(frame: .init(x: 0, y: 100, width: 150, height: 50))
         view.addSubview(slider)
     }
 
