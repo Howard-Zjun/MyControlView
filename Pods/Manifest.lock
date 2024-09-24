@@ -1,5 +1,5 @@
 PODS:
-  - MyBaseExtension (0.0.1)
+  - MyBaseExtension (0.0.2)
 
 DEPENDENCIES:
   - MyBaseExtension (from `https://github.com/Howard-Zjun/MyBaseExtension.git`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   MyBaseExtension:
-    :commit: 6791ef73519bd99138c0d5b5a452a11ae3911fb9
+    :commit: 42a3aed0da65e44891a278c92a7f1ae34eb9ba16
     :git: https://github.com/Howard-Zjun/MyBaseExtension.git
 
 SPEC CHECKSUMS:
-  MyBaseExtension: b7909cc5dfb6760f7e04c1d7f39b3a204c22a2d7
+  MyBaseExtension: 8802b9458097a74ebd2e9c2150235e3fcc8fe890
 
 PODFILE CHECKSUM: 3344d6c4af45d68dbce784a188734330f8237d34
 

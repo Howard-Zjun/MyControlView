@@ -478,6 +478,42 @@
 			};
 			name = Debug;
 		};
+		4A16EF517BFE2CA988BF40AC50B559DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFD8F86E181FE4B5F28B3796DBB0878F /* MyBaseExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MyBaseExtension/MyBaseExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MyBaseExtension/MyBaseExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MyBaseExtension/MyBaseExtension.modulemap";
+				PRODUCT_MODULE_NAME = MyBaseExtension;
+				PRODUCT_NAME = MyBaseExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		64B66931BF06AF5140E8EBCADD79FC71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43D66D85E0D95F188123755782EB4BF6 /* Pods-MyControlView.debug.xcconfig */;
@@ -552,6 +588,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		76F14CF992AC8EBBF657E1335244C877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ADFF923087D478209917AD74D548DF5 /* MyBaseExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MyBaseExtension/MyBaseExtension-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MyBaseExtension/MyBaseExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MyBaseExtension/MyBaseExtension.modulemap";
+				PRODUCT_MODULE_NAME = MyBaseExtension;
+				PRODUCT_NAME = MyBaseExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -719,77 +790,6 @@
 			};
 			name = Release;
 		};
-		CFEC1FBA7F31C3623929368D10F852A4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFD8F86E181FE4B5F28B3796DBB0878F /* MyBaseExtension.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MyBaseExtension/MyBaseExtension-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MyBaseExtension/MyBaseExtension-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MyBaseExtension/MyBaseExtension.modulemap";
-				PRODUCT_MODULE_NAME = MyBaseExtension;
-				PRODUCT_NAME = MyBaseExtension;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FAEEE5999F27F89EBE10B659C19E0AE6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1ADFF923087D478209917AD74D548DF5 /* MyBaseExtension.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MyBaseExtension/MyBaseExtension-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MyBaseExtension/MyBaseExtension-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MyBaseExtension/MyBaseExtension.modulemap";
-				PRODUCT_MODULE_NAME = MyBaseExtension;
-				PRODUCT_NAME = MyBaseExtension;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -805,8 +805,8 @@
 		388AB906294AA4F069446D627380623B /* Build configuration list for PBXNativeTarget "MyBaseExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FAEEE5999F27F89EBE10B659C19E0AE6 /* Debug */,
-				CFEC1FBA7F31C3623929368D10F852A4 /* Release */,
+				76F14CF992AC8EBBF657E1335244C877 /* Debug */,
+				4A16EF517BFE2CA988BF40AC50B559DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

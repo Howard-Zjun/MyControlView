@@ -1,6 +1,6 @@
 //
-//  CVDoubleThumbSliderView.swift
-//  ControlShow
+//  DTSliderView.swift
+//  MyControlView
 //
 //  Created by Howard-Zjun on 2023/8/13.
 //
@@ -8,37 +8,39 @@
 import UIKit
 import MyBaseExtension
 
-class CVDoubleThumbSliderView: UIView {
+/// 双滑块滑条
+public class DTSliderView: UIView {
 
-    var minValue: CGFloat {
+    var minThumbOservation1: NSKeyValueObservation?
+    
+    var maxThumbObservation2: NSKeyValueObservation?
+    
+    public var model: DTSliderViewModel {
         didSet {
-            if minValue > maxValue {
-                minValue = oldValue
-            } else if minValue < lowerValue {
-                minValue = lowerValue
+            let minX1 = (kwidth - thumbWidth) * (model.minThumbValue - model.minValue) / (model.maxValue - model.minValue) - thumbWidth * 0.5
+            minThumbV.frame.origin = .init(x: minX1, y: minThumbV.kminY)
+            minValueLab.text = .init(format: "%.1f", model.minThumbValue)
+            
+            let minX2 = (kwidth - thumbWidth) * (model.maxThumbValue - model.minValue) / (model.maxValue - model.minValue) - thumbWidth * 0.5
+            maxThumbV.frame.origin = .init(x: minX2, y: maxThumbV.kminY)
+            maxValueLab.text = .init(format: "%.1f", model.maxThumbValue)
+            
+            minThumbOservation1?.invalidate()
+            minThumbOservation1 = model.observe(\.minThumbValue, options: .new) { [weak self] model, change in
+                guard let self = self else { return }
+                let minX1 = (kwidth - thumbWidth) * (model.minThumbValue - model.minValue) / (model.maxValue - model.minValue) - thumbWidth * 0.5
+                minThumbV.frame.origin = .init(x: minX1, y: minThumbV.kminY)
+                minValueLab.text = .init(format: "%.1f", model.minThumbValue)
             }
-            let minX = (kwidth - thumbWidth) * (minValue - lowerValue) / (upperValue - lowerValue) - thumbWidth * 0.5
-            minThumbV.frame.origin = .init(x: minX, y: minThumbV.kminY)
-            minValueLab.text = .init(format: "%.1f", minValue)
+            maxThumbObservation2?.invalidate()
+            maxThumbObservation2 = model.observe(\.maxThumbValue, options: .new) { [weak self] model, change in
+                guard let self = self else { return }
+                let minX2 = (kwidth - thumbWidth) * (model.maxThumbValue - model.minValue) / (model.maxValue - model.minValue) - thumbWidth * 0.5
+                maxThumbV.frame.origin = .init(x: minX2, y: maxThumbV.kminY)
+                maxValueLab.text = .init(format: "%.1f", model.maxThumbValue)
+            }
         }
     }
-    
-    var maxValue: CGFloat {
-        didSet {
-            if maxValue < minValue {
-                maxValue = minValue
-            } else if maxValue > upperValue {
-                maxValue = upperValue
-            }
-            let minX = (kwidth - thumbWidth) * (maxValue - lowerValue) / (upperValue - lowerValue) + thumbWidth * 0.5
-            maxThumbV.frame.origin = .init(x: minX, y: maxThumbV.kminY)
-            maxValueLab.text = .init(format: "%.1f", maxValue)
-        }
-    }
-    
-    var lowerValue: CGFloat
-    
-    var upperValue: CGFloat
     
     var minBeginPoint: CGPoint?
     
@@ -51,7 +53,6 @@ class CVDoubleThumbSliderView: UIView {
         let minValueLab = UILabel(frame: .init(x: 0, y: (kheight - 45) * 0.5, width: kwidth * 0.5, height: 20))
         minValueLab.font = .italicSystemFont(ofSize: 14)
         minValueLab.textColor = .init(hex: 0xD2D2D2)
-        minValueLab.text = "\(minValue)"
         minValueLab.textAlignment = .left
         return minValueLab
     }()
@@ -60,7 +61,6 @@ class CVDoubleThumbSliderView: UIView {
         let maxValueLab = UILabel(frame: .init(x: kwidth * 0.5, y: (kheight - 45) * 0.5, width: kwidth * 0.5, height: 20))
         maxValueLab.font = .italicSystemFont(ofSize: 14)
         maxValueLab.textColor = .init(hex: 0xD2D2D2)
-        maxValueLab.text = "\(maxValue)"
         maxValueLab.textAlignment = .right
         return maxValueLab
     }()
@@ -104,11 +104,8 @@ class CVDoubleThumbSliderView: UIView {
     }()
     
     // MARK: - life time
-    init(frame: CGRect, lowerValue: CGFloat, upperValue: CGFloat) {
-        self.minValue = lowerValue
-        self.maxValue = upperValue
-        self.lowerValue = lowerValue
-        self.upperValue = upperValue
+    init(frame: CGRect, model: DTSliderViewModel) {
+        self.model = model
         super.init(frame: frame)
         configUI()
     }
@@ -138,13 +135,13 @@ class CVDoubleThumbSliderView: UIView {
             guard let minBeginPoint = minBeginPoint else {
                 return
             }
-            var minX = location.x - minBeginPoint.x
+            var minX: CGFloat = location.x - minBeginPoint.x
             if minX > maxThumbV.kminX - thumbWidth {
                 minX = maxThumbV.kminX - thumbWidth
             } else if minX < -thumbWidth * 0.5 {
                 minX = -thumbWidth * 0.5
             }
-            minValue = (minX + thumbWidth - thumbWidth * 0.5) / (kwidth - thumbWidth) * (upperValue - lowerValue) + lowerValue
+            model.minThumbValue = (minX + thumbWidth - thumbWidth * 0.5) / (kwidth - thumbWidth) * (model.maxValue - model.minValue) + model.minValue
         } else {
             minBeginPoint = nil
         }
@@ -158,15 +155,69 @@ class CVDoubleThumbSliderView: UIView {
             guard let maxBeginPoint = maxBeginPoint else {
                 return
             }
-            var minX = location.x - maxBeginPoint.x
+            var minX: CGFloat = location.x - maxBeginPoint.x
             if minX < minThumbV.kmaxX {
                 minX = minThumbV.kmaxX
             } else if minX > kwidth - thumbWidth * 0.5 {
                 minX = kwidth - thumbWidth * 0.5
             }
-            maxValue = (minX - thumbWidth * 0.5) / (kwidth - thumbWidth) * (upperValue - lowerValue) + lowerValue
+            model.maxThumbValue = (minX - thumbWidth * 0.5) / (kwidth - thumbWidth) * (model.maxValue - model.minValue) + model.minValue
         } else {
             maxBeginPoint = nil
         }
+    }
+}
+
+public class DTSliderViewModel: NSObject {
+ 
+    public let name: String
+    
+    public let minValue: CGFloat
+    
+    public let maxValue: CGFloat
+    
+    @objc dynamic var minThumbValue: CGFloat {
+        didSet {
+            if minThumbValue < minValue {
+                minThumbValue = minValue
+            } else if minThumbValue > maxValue {
+                minThumbValue = maxValue
+            }
+        }
+    }
+    
+    @objc dynamic var maxThumbValue: CGFloat {
+        didSet {
+            if maxThumbValue > maxValue {
+                maxThumbValue = maxValue
+            } else if maxThumbValue < minValue {
+                maxThumbValue = minValue
+            }
+        }
+    }
+    
+    public init?(name: String, minValue: CGFloat, maxValue: CGFloat, minThumbValue: CGFloat, maxThumbValue: CGFloat) {
+        guard minValue <= maxValue else {
+            print("\(NSStringFromClass(Self.self)) \(#function) minValue: \(minValue) > maxValue: \(maxValue) 错误")
+            return nil
+        }
+        guard minThumbValue <= maxThumbValue else {
+            print("\(NSStringFromClass(Self.self)) \(#function) minThumbValue: \(minThumbValue) > maxThumbValue: \(maxThumbValue) 错误")
+            return nil
+        }
+        guard minThumbValue >= minValue else {
+            print("\(NSStringFromClass(Self.self)) \(#function) minThumbValue \(minThumbValue) < minValue: \(minValue)")
+            return nil
+        }
+        guard maxThumbValue <= maxValue else {
+            print("\(NSStringFromClass(Self.self)) \(#function) maxThumbValue \(maxThumbValue) > maxValue: \(maxValue)")
+            return nil
+        }
+        
+        self.name = name
+        self.minValue = minValue
+        self.maxValue = maxValue
+        self.minThumbValue = minThumbValue
+        self.maxThumbValue = maxThumbValue
     }
 }

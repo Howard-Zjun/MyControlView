@@ -10,27 +10,57 @@ import UIKit
 public extension UIView {
     
     var kminX: CGFloat {
-        frame.minX
+        get {
+            frame.minX
+        }
+        set {
+            frame.origin.x = newValue
+        }
     }
     
     var kminY: CGFloat {
-        frame.minY
+        get {
+            frame.minY
+        }
+        set {
+            frame.origin.y = newValue
+        }
     }
     
     var kmaxX: CGFloat {
-        frame.maxX
+        get {
+            frame.maxX
+        }
+        set {
+            frame.origin.x = newValue - kwidth
+        }
     }
     
     var kmaxY: CGFloat {
-        frame.maxY
+        get {
+            frame.maxY
+        }
+        set {
+            frame.origin.y = newValue - kheight
+        }
     }
     
     var kwidth: CGFloat {
-        frame.width
+        get {
+            frame.width
+        }
+        set {
+            frame.size.width = newValue
+        }
     }
     
     var kheight: CGFloat {
-        frame.height
+        get {
+            frame.height
+        }
+        set {
+            frame.size.height = newValue
+        }
     }
     
     @discardableResult
