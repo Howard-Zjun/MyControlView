@@ -18,19 +18,12 @@ public class STSliderView: UIView {
     public var model: STSliderViewModel! {
         didSet {
             nameLab.text = model.name
-            let minX = 0.0
-            valueLab.frame.origin = .init(x: minX, y: valueLab.kminY)
-            valueLab.text = .init(format: "%.1f", model.thumbValue)
+            updateView(value: model.thumbValue, minValue: model.minValue, maxValue: model.maxValue)
             
             thumbObservation?.invalidate()
             thumbObservation = model.observe(\.thumbValue, options: .new, changeHandler: { [weak self] model, change in
                 guard let self = self else { return }
-                let minX = (kwidth - thumbWidth) * (model.thumbValue - model.minValue) / (model.maxValue - model.minValue) - thumbWidth * 0.5
-                
-                thumbV.kminX = minX
-                coverView.frame = .init(x: baseV.kminX, y: baseV.kminY, width: minX + thumbWidth * 0.5, height: baseV.kheight)
-                valueLab.kminY = minX + (thumbWidth - valueLab.kwidth) * 0.5
-                valueLab.text = .init(format: "%.1f", model.thumbValue)
+                updateView(value: model.thumbValue, minValue: model.minValue, maxValue: model.maxValue)
             })
         }
     }
@@ -110,15 +103,25 @@ public class STSliderView: UIView {
                 return
             }
             var minX: CGFloat = location.x - beginPoint.x
-            if minX > kwidth - thumbWidth {
-                minX = kwidth - thumbWidth
-            } else if minX < 0 {
-                minX = 0
+            if minX > baseV.kmaxX {
+                minX = baseV.kmaxX
+            } else if minX < baseV.kminX {
+                minX = baseV.kminX
             }
-            model.thumbValue = (minX + thumbWidth * 0.5) / (kwidth - thumbWidth) * (model.maxValue - model.minValue) + model.minValue
+            print("\(NSStringFromClass(Self.self)) \(#function) 比例 = \((minX - baseV.kminX) / (baseV.kwidth))")
+            model.thumbValue = (minX - baseV.kminX) / baseV.kwidth * (model.maxValue - model.minValue) + model.minValue
         } else {
             beginPoint = nil
         }
+    }
+    
+    func updateView(value: CGFloat, minValue: CGFloat, maxValue: CGFloat) {
+        let minX = baseV.kwidth * (value - minValue) / (maxValue - minValue) + baseV.kminX - thumbWidth * 0.5
+        
+        thumbV.kminX = minX
+        coverView.kwidth = minX + thumbWidth * 0.5 - baseV.kminX
+        valueLab.kminX = minX + (thumbWidth - valueLab.kwidth) * 0.5
+        valueLab.text = .init(format: "%.1f", value)
     }
 }
 
