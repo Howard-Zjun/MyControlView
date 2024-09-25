@@ -9,19 +9,17 @@
 /* Begin PBXBuildFile section */
 		4CDB0EB4C3A68B24B8885B41 /* Pods_MyControlView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772E358C9A06D832CB8CA25E /* Pods_MyControlView.framework */; };
 		EB0982882CA2602D0030225F /* STSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0982872CA2602D0030225F /* STSliderView.swift */; };
+		EB0982982CA42CCD0030225F /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0982972CA42CCD0030225F /* Const.swift */; };
 		EB6B57022C9EC00C008E6F92 /* MyControlView.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6B57012C9EC00C008E6F92 /* MyControlView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB6B570B2C9EC067008E6F92 /* CVSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B57092C9EC067008E6F92 /* CVSliderView.swift */; };
 		EB6B570C2C9EC067008E6F92 /* DTSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B570A2C9EC067008E6F92 /* DTSliderView.swift */; };
 		EB6B57102C9EC379008E6F92 /* WCFunctionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B570E2C9EC379008E6F92 /* WCFunctionListView.swift */; };
 		EB6B57142C9EC3AE008E6F92 /* PixelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B57112C9EC3AE008E6F92 /* PixelPickerView.swift */; };
-		EB6B57152C9EC3AE008E6F92 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EB6B57122C9EC3AE008E6F92 /* README.md */; };
 		EB6B571B2C9EC40F008E6F92 /* DoubleThumbSliderView-show.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB6B57162C9EC40F008E6F92 /* DoubleThumbSliderView-show.gif */; };
 		EB6B571C2C9EC40F008E6F92 /* HorizontalPicker-show.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB6B57172C9EC40F008E6F92 /* HorizontalPicker-show.gif */; };
 		EB6B571D2C9EC40F008E6F92 /* PixelPickerView-show.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB6B57182C9EC40F008E6F92 /* PixelPickerView-show.gif */; };
 		EB6B571E2C9EC40F008E6F92 /* SliderView-show.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB6B57192C9EC40F008E6F92 /* SliderView-show.gif */; };
 		EB6B57222C9EC41A008E6F92 /* HorizontalPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B571F2C9EC41A008E6F92 /* HorizontalPickerView.swift */; };
-		EB6B57232C9EC41A008E6F92 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = EB6B57202C9EC41A008E6F92 /* readme.md */; };
-		EB6B57252C9EC4CF008E6F92 /* Effect.md in Resources */ = {isa = PBXBuildFile; fileRef = EB6B57242C9EC4CF008E6F92 /* Effect.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,20 +27,18 @@
 		3CDA5B435FFED6F242F51019 /* Pods-MyControlView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyControlView.release.xcconfig"; path = "Target Support Files/Pods-MyControlView/Pods-MyControlView.release.xcconfig"; sourceTree = "<group>"; };
 		772E358C9A06D832CB8CA25E /* Pods_MyControlView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyControlView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0982872CA2602D0030225F /* STSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSliderView.swift; sourceTree = "<group>"; };
+		EB0982972CA42CCD0030225F /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		EB6B56FE2C9EC00C008E6F92 /* MyControlView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyControlView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6B57012C9EC00C008E6F92 /* MyControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyControlView.h; sourceTree = "<group>"; };
 		EB6B57092C9EC067008E6F92 /* CVSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVSliderView.swift; sourceTree = "<group>"; };
 		EB6B570A2C9EC067008E6F92 /* DTSliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTSliderView.swift; sourceTree = "<group>"; };
 		EB6B570E2C9EC379008E6F92 /* WCFunctionListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCFunctionListView.swift; sourceTree = "<group>"; };
 		EB6B57112C9EC3AE008E6F92 /* PixelPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelPickerView.swift; sourceTree = "<group>"; };
-		EB6B57122C9EC3AE008E6F92 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EB6B57162C9EC40F008E6F92 /* DoubleThumbSliderView-show.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "DoubleThumbSliderView-show.gif"; sourceTree = "<group>"; };
 		EB6B57172C9EC40F008E6F92 /* HorizontalPicker-show.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "HorizontalPicker-show.gif"; sourceTree = "<group>"; };
 		EB6B57182C9EC40F008E6F92 /* PixelPickerView-show.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "PixelPickerView-show.gif"; sourceTree = "<group>"; };
 		EB6B57192C9EC40F008E6F92 /* SliderView-show.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "SliderView-show.gif"; sourceTree = "<group>"; };
 		EB6B571F2C9EC41A008E6F92 /* HorizontalPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalPickerView.swift; sourceTree = "<group>"; };
-		EB6B57202C9EC41A008E6F92 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
-		EB6B57242C9EC4CF008E6F92 /* Effect.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Effect.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +70,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EB0982962CA42CBB0030225F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EB0982972CA42CCD0030225F /* Const.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		EB6B56F42C9EC00C008E6F92 = {
 			isa = PBXGroup;
 			children = (
+				EB0982962CA42CBB0030225F /* Other */,
 				EB6B57002C9EC00C008E6F92 /* MyControlView */,
 				EB6B56FF2C9EC00C008E6F92 /* Products */,
 				010D56E67792F9135637BC61 /* Pods */,
@@ -110,7 +115,6 @@
 			children = (
 				EB6B570A2C9EC067008E6F92 /* DTSliderView.swift */,
 				EB6B57092C9EC067008E6F92 /* CVSliderView.swift */,
-				EB6B57242C9EC4CF008E6F92 /* Effect.md */,
 				EB0982872CA2602D0030225F /* STSliderView.swift */,
 			);
 			path = SliderView;
@@ -128,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				EB6B57112C9EC3AE008E6F92 /* PixelPickerView.swift */,
-				EB6B57122C9EC3AE008E6F92 /* README.md */,
 			);
 			path = PixelPickerView;
 			sourceTree = "<group>";
@@ -148,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				EB6B571F2C9EC41A008E6F92 /* HorizontalPickerView.swift */,
-				EB6B57202C9EC41A008E6F92 /* readme.md */,
 			);
 			path = HorizontalPickerView;
 			sourceTree = "<group>";
@@ -227,9 +229,6 @@
 				EB6B571E2C9EC40F008E6F92 /* SliderView-show.gif in Resources */,
 				EB6B571C2C9EC40F008E6F92 /* HorizontalPicker-show.gif in Resources */,
 				EB6B571D2C9EC40F008E6F92 /* PixelPickerView-show.gif in Resources */,
-				EB6B57252C9EC4CF008E6F92 /* Effect.md in Resources */,
-				EB6B57152C9EC3AE008E6F92 /* README.md in Resources */,
-				EB6B57232C9EC41A008E6F92 /* readme.md in Resources */,
 				EB6B571B2C9EC40F008E6F92 /* DoubleThumbSliderView-show.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +271,7 @@
 				EB6B570C2C9EC067008E6F92 /* DTSliderView.swift in Sources */,
 				EB0982882CA2602D0030225F /* STSliderView.swift in Sources */,
 				EB6B57142C9EC3AE008E6F92 /* PixelPickerView.swift in Sources */,
+				EB0982982CA42CCD0030225F /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

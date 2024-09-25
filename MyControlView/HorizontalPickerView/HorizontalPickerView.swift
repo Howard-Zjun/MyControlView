@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import MyBaseExtension
 
 class HorizontalPickerView: UIScrollView {
     

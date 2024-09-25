@@ -1,1 +1,0 @@
-![点阵效果](https://github.com/Howard-SSS/ControlShow/blob/main/ControlShow/Resource/PixelPickerView-show.gif?raw=true)
