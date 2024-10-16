@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyControlView"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "自定义控件"
 
   # This description is used to generate tags and improve search results.
