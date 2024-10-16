@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MyBaseExtension
 
 /// 双滑块滑条
 public class DTSliderView: UIView {

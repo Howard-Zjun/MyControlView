@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MyBaseExtension
 
 /// 单滑块滑条
 public class STSliderView: UIView {
