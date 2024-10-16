@@ -11,7 +11,6 @@ public extension NSObject {
     
     // 创建一个颜色图片
     func createImage(color: UIColor, size: CGSize) -> UIImage {
-        let rect = CGRectMake(0, 0, size.width, size.height)
         let renderer = UIGraphicsImageRenderer(size: size)
         let ret = renderer.image { context in
             color.setFill()

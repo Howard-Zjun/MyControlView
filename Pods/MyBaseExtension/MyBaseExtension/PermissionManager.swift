@@ -26,8 +26,6 @@ public extension NSObject {
         vc.addAction(toSettingAction)
         if let kKeyWindow {
             kKeyWindow.rootViewController?.present(vc, animated: true)
-        } else {
-            UIApplication.shared.keyWindow?.rootViewController?.present(vc, animated: true)
         }
     }
     

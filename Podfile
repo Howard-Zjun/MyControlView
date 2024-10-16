@@ -8,8 +8,9 @@ def commonPods
 
   use_frameworks!
 
-  #  pod 'MyBaseExtension', :path => '/Users/Howard-Zjun/MyBaseExtension'
-  pod 'MyBaseExtension', :git => 'https://github.com/Howard-Zjun/MyBaseExtension.git'
+#  pod 'MyBaseExtension', :path => '/Users/Howard-Zjun/MyBaseExtension'
+#  pod 'MyBaseExtension', :git => 'https://github.com/Howard-Zjun/MyBaseExtension.git'
+  pod 'MyBaseExtension'
 end
 
 target 'MyControlView' do

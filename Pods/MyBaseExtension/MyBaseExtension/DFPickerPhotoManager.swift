@@ -65,6 +65,7 @@ class DFPickerPhotoManager: NSObject {
     }
 }
 
+// MARK: - PHPickerViewControllerDelegate
 extension DFPickerPhotoManager: PHPickerViewControllerDelegate {
     
     @available(iOS 14, *)
@@ -127,15 +128,16 @@ extension DFPickerPhotoManager: PHPickerViewControllerDelegate {
     }
 }
 
+// MARK: - UIImagePickerControllerDelegate, UINavigationControllerDelegate
 extension DFPickerPhotoManager: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[.originalImage] as? UIImage {
-            
+            block(image)
         } else if let image = info[.livePhoto] as? PHLivePhoto {
-            
+            block(image)
         } else if let videoURL = info[.mediaURL] as? URL {
-            
+            block(videoURL)
         }
         
         picker.dismiss(animated: true)
