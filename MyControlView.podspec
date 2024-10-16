@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyControlView"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "自定义控件"
 
   # This description is used to generate tags and improve search results.
@@ -125,7 +125,6 @@ Pod::Spec.new do |spec|
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
-
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If your library depends on compiler flags you can set them in the xcconfig hash
@@ -136,5 +135,6 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "MyBaseExtension", git:"https://github.com/Howard-Zjun/MyBaseExtension.git"
 
 end
