@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
 			2.
                    DESC
 
-  spec.homepage     = "https://github.com/Howard-SSS/MyControlView"
+  spec.homepage     = "https://github.com/Howard-Zjun/MyControlView"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -83,7 +83,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Howard-SSS/MyControlView.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Howard-Zjun/MyControlView.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
