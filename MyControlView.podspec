@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyControlView"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "自定义控件"
   spec.swift_versions = "5.0"
 
