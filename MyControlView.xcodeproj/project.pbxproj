@@ -20,6 +20,8 @@
 		EB6B571D2C9EC40F008E6F92 /* PixelPickerView-show.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB6B57182C9EC40F008E6F92 /* PixelPickerView-show.gif */; };
 		EB6B571E2C9EC40F008E6F92 /* SliderView-show.gif in Resources */ = {isa = PBXBuildFile; fileRef = EB6B57192C9EC40F008E6F92 /* SliderView-show.gif */; };
 		EB6B57222C9EC41A008E6F92 /* HorizontalPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B571F2C9EC41A008E6F92 /* HorizontalPickerView.swift */; };
+		EB813B332CCA2261006B00B0 /* MYHSBColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB813B322CCA2261006B00B0 /* MYHSBColorPickerView.swift */; };
+		EB813B372CCA3A40006B00B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB813B362CCA3A40006B00B0 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		EB6B57182C9EC40F008E6F92 /* PixelPickerView-show.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "PixelPickerView-show.gif"; sourceTree = "<group>"; };
 		EB6B57192C9EC40F008E6F92 /* SliderView-show.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "SliderView-show.gif"; sourceTree = "<group>"; };
 		EB6B571F2C9EC41A008E6F92 /* HorizontalPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalPickerView.swift; sourceTree = "<group>"; };
+		EB813B322CCA2261006B00B0 /* MYHSBColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYHSBColorPickerView.swift; sourceTree = "<group>"; };
+		EB813B362CCA3A40006B00B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,14 @@
 		EB6B57002C9EC00C008E6F92 /* MyControlView */ = {
 			isa = PBXGroup;
 			children = (
+				EB813B312CCA220C006B00B0 /* ColorView */,
 				EB6B57082C9EC053008E6F92 /* SliderView */,
 				EB6B570F2C9EC379008E6F92 /* WCFunctionListView */,
 				EB6B57132C9EC3AE008E6F92 /* PixelPickerView */,
 				EB6B571A2C9EC40F008E6F92 /* Resource */,
 				EB6B57212C9EC41A008E6F92 /* HorizontalPickerView */,
 				EB6B57012C9EC00C008E6F92 /* MyControlView.h */,
+				EB813B362CCA3A40006B00B0 /* Assets.xcassets */,
 			);
 			path = MyControlView;
 			sourceTree = "<group>";
@@ -153,6 +159,14 @@
 				EB6B571F2C9EC41A008E6F92 /* HorizontalPickerView.swift */,
 			);
 			path = HorizontalPickerView;
+			sourceTree = "<group>";
+		};
+		EB813B312CCA220C006B00B0 /* ColorView */ = {
+			isa = PBXGroup;
+			children = (
+				EB813B322CCA2261006B00B0 /* MYHSBColorPickerView.swift */,
+			);
+			path = ColorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +243,7 @@
 				EB6B571E2C9EC40F008E6F92 /* SliderView-show.gif in Resources */,
 				EB6B571C2C9EC40F008E6F92 /* HorizontalPicker-show.gif in Resources */,
 				EB6B571D2C9EC40F008E6F92 /* PixelPickerView-show.gif in Resources */,
+				EB813B372CCA3A40006B00B0 /* Assets.xcassets in Resources */,
 				EB6B571B2C9EC40F008E6F92 /* DoubleThumbSliderView-show.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB813B332CCA2261006B00B0 /* MYHSBColorPickerView.swift in Sources */,
 				EB6B57222C9EC41A008E6F92 /* HorizontalPickerView.swift in Sources */,
 				EB6B570B2C9EC067008E6F92 /* CVSliderView.swift in Sources */,
 				EB6B57102C9EC379008E6F92 /* WCFunctionListView.swift in Sources */,

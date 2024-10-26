@@ -108,8 +108,8 @@ public class STSliderView: UIView {
             } else if minX < baseV.kminX {
                 minX = baseV.kminX
             }
-            print("\(NSStringFromClass(Self.self)) \(#function) 比例 = \((minX - baseV.kminX) / (baseV.kwidth))")
             model.thumbValue = (minX - baseV.kminX) / baseV.kwidth * (model.maxValue - model.minValue) + model.minValue
+            print("\(NSStringFromClass(Self.self)) \(#function) value: \(model.thumbValue)")
         } else {
             beginPoint = nil
         }
@@ -133,7 +133,7 @@ public class STSliderViewModel: NSObject {
     
     public let maxValue: CGFloat
     
-    @objc dynamic var thumbValue: CGFloat {
+    @objc dynamic public var thumbValue: CGFloat {
         didSet {
             if thumbValue < minValue {
                 thumbValue = minValue
