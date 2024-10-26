@@ -10,29 +10,23 @@ import MyBaseExtension
 
 public class MYHSBColorPickerView: UIImageView {
 
-    /// 色相
-    @objc public var hue: CGFloat = 0 {
-        didSet {
-            if hue < 0 {
-                hue = 0
-            } else if hue > 1 {
-                hue = 1
-            }
-            
-            updateByValueChange()
-        }
-    }
+    var hueObservation: NSKeyValueObservation?
     
-    /// 饱和度
-    @objc public var sat: CGFloat = 0 {
+    var satObservation: NSKeyValueObservation?
+    
+    @objc public var model: MYHSBColorPickerViewModel! {
         didSet {
-            if sat < 0 {
-                sat = 0
-            } else if sat > 1 {
-                sat = 1
-            }
+            hueObservation?.invalidate()
+            satObservation?.invalidate()
             
-            updateByValueChange()
+            hueObservation = model.observe(\.hue, options: .new, changeHandler: { [weak self] model, change in
+                guard let self = self else { return }
+                updateByValueChange()
+            })
+            satObservation = model.observe(\.sat, options: .new, changeHandler: { [weak self] model, change in
+                guard let self = self else { return }
+                updateByValueChange()
+            })
         }
     }
     
@@ -148,10 +142,10 @@ public class MYHSBColorPickerView: UIImageView {
             }
         }
         
-        setValue(tcWidth / r, forKey: #keyPath(sat))
-        setValue(radian / (CGFloat.pi * 2), forKey: #keyPath(hue))
+        setValue(tcWidth / r, forKey: #keyPath(model.sat))
+        setValue(radian / (CGFloat.pi * 2), forKey: #keyPath(model.hue))
         
-        print("\(NSStringFromClass(Self.self)) \(#function) x: \(tPoint.x) y: \(tPoint.y) sat: \(sat) hue: \(hue)")
+        print("\(NSStringFromClass(Self.self)) \(#function) x: \(tPoint.x) y: \(tPoint.y) sat: \(model.sat) hue: \(model.hue)")
 
         panView.center = .init(x: tPoint.x, y: tPoint.y)
         updateColor()
@@ -170,18 +164,18 @@ public class MYHSBColorPickerView: UIImageView {
     private func updateByValueChange() {
         let r = r
         let cPoint = cPoint
-        let tcWidth = r * sat
-        let angle = hue * 360
+        let tcWidth = r * model.sat
+        let angle = model.hue * 360
         let tcy = sin(angle) * tcWidth
         let tcx = cos(angle) * tcWidth
         
-        print("\(NSStringFromClass(Self.self)) \(#function) sat: \(sat) hue: \(hue)")
+        print("\(NSStringFromClass(Self.self)) \(#function) sat: \(model.sat) hue: \(model.hue)")
 
-        if hue <= 0.25 {
+        if model.hue <= 0.25 {
             panView.center = .init(x: cPoint.x + tcx, y: r - tcy)
-        } else if hue <= 0.5 {
+        } else if model.hue <= 0.5 {
             panView.center = .init(x: r - tcx, y: r - tcy)
-        } else if hue <= 0.75 {
+        } else if model.hue <= 0.75 {
             panView.center = .init(x: r - tcx, y: cPoint.y + tcy)
         } else {
             panView.center = .init(x: cPoint.x + tcx, y: cPoint.y + tcy)
@@ -195,6 +189,36 @@ public class MYHSBColorPickerView: UIImageView {
     }
     
     private func updateColor() {
-        panView.backgroundColor = .init(hue: hue, saturation: sat, brightness: 1, alpha: 1)
+        panView.backgroundColor = .init(hue: model.hue, saturation: model.sat, brightness: 1, alpha: 1)
+    }
+}
+
+public class MYHSBColorPickerViewModel: NSObject {
+    
+    /// 色相
+    @objc dynamic public var hue: CGFloat {
+        didSet {
+            if hue < 0 {
+                hue = 0
+            } else if hue > 1 {
+                hue = 1
+            }
+        }
+    }
+    
+    /// 饱和度
+    @objc dynamic public var sat: CGFloat {
+        didSet {
+            if sat < 0 {
+                sat = 0
+            } else if sat > 1 {
+                sat = 1
+            }
+        }
+    }
+    
+    public init?(hue: CGFloat, sat: CGFloat) {
+        self.hue = hue
+        self.sat = sat
     }
 }
