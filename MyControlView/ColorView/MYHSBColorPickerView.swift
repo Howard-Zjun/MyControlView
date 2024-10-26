@@ -44,6 +44,7 @@ public class MYHSBColorPickerView: UIImageView {
         .init(x: kwidth * 0.5, y: kheight * 0.5)
     }
     
+    // MARK: - view
     lazy var panView: UIView = {
         let panView = UIView(frame: .init(x: (kwidth - 30) * 0.5, y: (kheight - 30) * 0.5, width: 30, height: 30))
         panView.layer.cornerRadius = 15
@@ -53,6 +54,7 @@ public class MYHSBColorPickerView: UIImageView {
         return panView
     }()
     
+    // MARK: - life time
     public init(x: CGFloat, y: CGFloat, width: CGFloat) {
         super.init(frame: .init(x: x, y: y, width: width, height: width))
         isUserInteractionEnabled = true
@@ -68,6 +70,12 @@ public class MYHSBColorPickerView: UIImageView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        hueObservation?.invalidate()
+        satObservation?.invalidate()
+    }
+    
+    // MARK: - target
     @objc func updateByPanGesture(_ target: UILongPressGestureRecognizer) {
         // 触摸点
         var tPoint = target.location(in: self)
