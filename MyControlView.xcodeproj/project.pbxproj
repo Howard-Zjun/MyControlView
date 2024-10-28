@@ -22,6 +22,8 @@
 		EB6B57222C9EC41A008E6F92 /* HorizontalPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6B571F2C9EC41A008E6F92 /* HorizontalPickerView.swift */; };
 		EB813B332CCA2261006B00B0 /* MYHSBColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB813B322CCA2261006B00B0 /* MYHSBColorPickerView.swift */; };
 		EB813B372CCA3A40006B00B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB813B362CCA3A40006B00B0 /* Assets.xcassets */; };
+		EBED0B352CCF743B008DEB25 /* MYHistogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED0B342CCF743B008DEB25 /* MYHistogramView.swift */; };
+		EBED0B372CCF74A0008DEB25 /* ScoreStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED0B362CCF74A0008DEB25 /* ScoreStatistics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		EB6B571F2C9EC41A008E6F92 /* HorizontalPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalPickerView.swift; sourceTree = "<group>"; };
 		EB813B322CCA2261006B00B0 /* MYHSBColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYHSBColorPickerView.swift; sourceTree = "<group>"; };
 		EB813B362CCA3A40006B00B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBED0B342CCF743B008DEB25 /* MYHistogramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYHistogramView.swift; sourceTree = "<group>"; };
+		EBED0B362CCF74A0008DEB25 /* ScoreStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreStatistics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		EB6B57002C9EC00C008E6F92 /* MyControlView */ = {
 			isa = PBXGroup;
 			children = (
+				EBED0B332CCF7427008DEB25 /* AnalyseView */,
 				EB813B312CCA220C006B00B0 /* ColorView */,
 				EB6B57082C9EC053008E6F92 /* SliderView */,
 				EB6B570F2C9EC379008E6F92 /* WCFunctionListView */,
@@ -167,6 +172,15 @@
 				EB813B322CCA2261006B00B0 /* MYHSBColorPickerView.swift */,
 			);
 			path = ColorView;
+			sourceTree = "<group>";
+		};
+		EBED0B332CCF7427008DEB25 /* AnalyseView */ = {
+			isa = PBXGroup;
+			children = (
+				EBED0B342CCF743B008DEB25 /* MYHistogramView.swift */,
+				EBED0B362CCF74A0008DEB25 /* ScoreStatistics.swift */,
+			);
+			path = AnalyseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,8 +295,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB813B332CCA2261006B00B0 /* MYHSBColorPickerView.swift in Sources */,
+				EBED0B372CCF74A0008DEB25 /* ScoreStatistics.swift in Sources */,
 				EB6B57222C9EC41A008E6F92 /* HorizontalPickerView.swift in Sources */,
 				EB6B570B2C9EC067008E6F92 /* CVSliderView.swift in Sources */,
+				EBED0B352CCF743B008DEB25 /* MYHistogramView.swift in Sources */,
 				EB6B57102C9EC379008E6F92 /* WCFunctionListView.swift in Sources */,
 				EB6B570C2C9EC067008E6F92 /* DTSliderView.swift in Sources */,
 				EB0982882CA2602D0030225F /* STSliderView.swift in Sources */,
