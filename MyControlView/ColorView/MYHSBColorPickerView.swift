@@ -150,8 +150,8 @@ public class MYHSBColorPickerView: UIImageView {
             }
         }
         
-        setValue(tcWidth / r, forKey: #keyPath(model.sat))
-        setValue(radian / (CGFloat.pi * 2), forKey: #keyPath(model.hue))
+        model.setValue(tcWidth / r, forKey: "sat")
+        model.setValue(radian / (CGFloat.pi * 2), forKey: "hue")
         
         print("\(NSStringFromClass(Self.self)) \(#function) x: \(tPoint.x) y: \(tPoint.y) sat: \(model.sat) hue: \(model.hue)")
 
