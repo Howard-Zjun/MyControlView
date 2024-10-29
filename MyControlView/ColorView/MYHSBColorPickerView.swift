@@ -225,8 +225,21 @@ public class MYHSBColorPickerViewModel: NSObject {
         }
     }
     
-    public init?(hue: CGFloat, sat: CGFloat) {
-        self.hue = hue
-        self.sat = sat
+    public init(hue: CGFloat, sat: CGFloat) {
+        if hue < 0 {
+            self.hue = 0
+        } else if hue > 1 {
+            self.hue = 1
+        } else {
+            self.hue = hue
+        }
+        
+        if sat < 0 {
+            self.sat = 0
+        } else if sat > 1 {
+            self.sat = 1
+        } else {
+            self.sat = sat
+        }
     }
 }
