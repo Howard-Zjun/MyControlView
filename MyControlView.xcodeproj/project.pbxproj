@@ -24,6 +24,8 @@
 		EB813B372CCA3A40006B00B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB813B362CCA3A40006B00B0 /* Assets.xcassets */; };
 		EBED0B352CCF743B008DEB25 /* MYHistogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED0B342CCF743B008DEB25 /* MYHistogramView.swift */; };
 		EBED0B372CCF74A0008DEB25 /* ScoreStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED0B362CCF74A0008DEB25 /* ScoreStatistics.swift */; };
+		EBED0B392CD06D78008DEB25 /* MYScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED0B382CD06D78008DEB25 /* MYScoreModel.swift */; };
+		EBED0B3B2CD06F6D008DEB25 /* MYSectionStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED0B3A2CD06F6D008DEB25 /* MYSectionStatisticsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		EB813B362CCA3A40006B00B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBED0B342CCF743B008DEB25 /* MYHistogramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYHistogramView.swift; sourceTree = "<group>"; };
 		EBED0B362CCF74A0008DEB25 /* ScoreStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreStatistics.swift; sourceTree = "<group>"; };
+		EBED0B382CD06D78008DEB25 /* MYScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYScoreModel.swift; sourceTree = "<group>"; };
+		EBED0B3A2CD06F6D008DEB25 /* MYSectionStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYSectionStatisticsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,8 @@
 			children = (
 				EBED0B342CCF743B008DEB25 /* MYHistogramView.swift */,
 				EBED0B362CCF74A0008DEB25 /* ScoreStatistics.swift */,
+				EBED0B382CD06D78008DEB25 /* MYScoreModel.swift */,
+				EBED0B3A2CD06F6D008DEB25 /* MYSectionStatisticsView.swift */,
 			);
 			path = AnalyseView;
 			sourceTree = "<group>";
@@ -303,7 +309,9 @@
 				EB6B570C2C9EC067008E6F92 /* DTSliderView.swift in Sources */,
 				EB0982882CA2602D0030225F /* STSliderView.swift in Sources */,
 				EB6B57142C9EC3AE008E6F92 /* PixelPickerView.swift in Sources */,
+				EBED0B3B2CD06F6D008DEB25 /* MYSectionStatisticsView.swift in Sources */,
 				EB0982982CA42CCD0030225F /* Const.swift in Sources */,
+				EBED0B392CD06D78008DEB25 /* MYScoreModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

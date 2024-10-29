@@ -9,13 +9,13 @@ import UIKit
 
 class MYHistogramView: UIView {
 
-    let baseScore: Int
+    let baseScore: CGFloat
     
-    let topScore: Int
+    let topScore: CGFloat
     
     let spaceCount: Int
     
-    let scores: [CGFloat]
+    let scores: [MYScoreModel]
     
     let statisticsStrategy: [ScoreStatistics] = [AverageScoreStatistics(), TopScoreStatistics(), LowestScoreStatistics()]
     
@@ -31,7 +31,7 @@ class MYHistogramView: UIView {
             let lab = UILabel(frame: .init(x: 0, y: baseY + CGFloat(index) * itemHeight, width: 50, height: itemHeight))
             lab.font = .systemFont(ofSize: 15)
             lab.textColor = .black
-            lab.text = "\(topScore - Int(CGFloat(index) * scoreSpace))"
+            lab.text = "\(Int(topScore - CGFloat(index) * scoreSpace))"
             lab.textAlignment = .center
             spaceLabs.append(lab)
         }
@@ -69,7 +69,7 @@ class MYHistogramView: UIView {
         let itemWidth = (kwidth - spaceLabs[0].kmaxX - statisticsSpace * CGFloat(statisticsStrategy.count)) / CGFloat(statisticsStrategy.count)
         
         for strategy in statisticsStrategy {
-            let score = strategy.result(scores: scores)
+            let score = strategy.result(scores: scores.map({ $0.dscore }))
             let minY = maxScoreY + (minScoreY - maxScoreY) * (CGFloat(topScore) - score) / CGFloat(topScore - baseScore)
             let view = UIView(frame: .init(x: itemMaxX, y: minY, width: itemWidth, height: minScoreY - minY))
             view.backgroundColor = strategy.columnarColor
@@ -86,7 +86,7 @@ class MYHistogramView: UIView {
             let lab = UILabel(frame: .init(x: columnarView.kminX, y: columnarView.kminY - 15, width: columnarView.kwidth, height: 15))
             lab.font = .systemFont(ofSize: 15, weight: .medium)
             lab.textColor = .init(hex: 0x4E88F9)
-            lab.text = "\(statisticsStrategy[index].result(scores: scores))"
+            lab.text = "\(statisticsStrategy[index].result(scores: scores.map({ $0.dscore })))"
             lab.textAlignment = .center
             scoreLabs.append(lab)
         }
@@ -114,7 +114,7 @@ class MYHistogramView: UIView {
     ///   - topScore: 最高分刻度
     ///   - spaceCount: 刻度数量
     ///   - scores: 所有分数
-    init(frame: CGRect, baseScore: Int, topScore: Int, spaceCount: Int, scores: [CGFloat]) {
+    init(frame: CGRect, baseScore: CGFloat, topScore: CGFloat, spaceCount: Int, scores: [MYScoreModel]) {
         self.baseScore = baseScore
         self.topScore = topScore
         self.spaceCount = spaceCount
